@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220125194831">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220222225612">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,18 +20,18 @@
 					<div data-da=" .menu__icon-inner, 991.98" class="header__column">
 						<div class="header__menu menu">
 							<nav class="menu__body">
-								<ul class="menu__list">
-									<li><a href="#" class="menu__link">Главная</a></li>
-									<li><a href="#" class="menu__link">О нас</a></li>
-									<li><a href="#" class="menu__link">Меню</a></li>
-									<li><a href="#" class="menu__link menu__link-res">Бронирование</a></li>
+								<ul id="myTopnav" class="menu__list">
+									<li><a data-goto="main" href="#" class="menu__link">Главная</a></li>
+									<li><a data-goto="about" href="#" class="menu__link">О нас</a></li>
+									<li><a data-goto="menu" href="#" class="menu__link">Меню</a></li>
+									<li><a data-goto="booking" href="#" class="menu__link menu__link-res">Бронирование</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 					<div class="header__column">
 						<a href="#" class="header__logo">
-							<img src="img/logo.svg?_v=1643114911491" alt="Логотип">
+							<img src="img/logo.svg?_v=1645545372530" alt="Логотип">
 						</a>
 					</div>
 					<div class="header__column">
@@ -39,9 +39,9 @@
 							<div class="menu-action__menu menu">
 								<nav data-da=" .menu__icon-inner, 991.98" class="menu__body">
 									<ul class="menu__list">
-										<li><a href="#" class="menu__link">Страница</a></li>
-										<li><a href="#" class="menu__link">Магазин</a></li>
-										<li><a href="#" class="menu__link">Контакты</a></li>
+										<li><a data-goto="reviews" href="#" class="menu__link">Отзывы</a></li>
+										<li><a data-goto="products" href="#" class="menu__link">Магазин</a></li>
+										<li><a data-goto="news" href="#" class="menu__link">Контакты</a></li>
 									</ul>
 								</nav>
 								<div class="menu-action__item _icon-search"></div>
@@ -50,7 +50,7 @@
 									<button type="button" class="icon-menu"><span></span></button>
 									<div class="menu__icon-body">
 										<a href="#" class="header__logo">
-											<img src="img/logo.svg?_v=1643114911491" alt="Логотип">
+											<img src="img/logo.svg?_v=1645545372530" alt="Логотип">
 										</a>
 										<div class="menu__icon-inner"></div>
 									</div>
@@ -62,9 +62,9 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__main main">
+			<section id="main" class="page__main main">
 				<div class="main__image-ibg">
-					<picture><source srcset="img/bg_main.webp"type="image/webp"><img src="img/bg_main.jpg?_v=1643114911491" alt="Картинка"></picture>
+					<picture><source srcset="img/bg_main.webp"type="image/webp"><img src="img/bg_main.jpg?_v=1645545372530" alt="Картинка"></picture>
 				</div>
 				<div class="main__container">
 					<div class="main__body">
@@ -96,36 +96,36 @@
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__text"><span>01</span>Лучший "кофейный" цветок</div>
 								<a href="#" class="item-benefits__image">
-									<picture><source srcset="img/benefits/01.webp"type="image/webp"><img src="img/benefits/01.jpg?_v=1643114911491" alt="Картинка"></picture>
+									<picture><source srcset="img/benefits/01.webp"type="image/webp"><img src="img/benefits/01.jpg?_v=1645545372530" alt="Картинка"></picture>
 								</a>
 							</div>
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__text"><span>02</span>Место,где можно забыться</div>
 								<a href="#" class="item-benefits__image">
-									<picture><source srcset="img/benefits/02.webp"type="image/webp"><img src="img/benefits/02.jpg?_v=1643114911491" alt="Картинка"></picture>
+									<picture><source srcset="img/benefits/02.webp"type="image/webp"><img src="img/benefits/02.jpg?_v=1645545372530" alt="Картинка"></picture>
 								</a>
 							</div>
 							<div class="benefits__item item-benefits">
 								<div class="item-benefits__text"><span>03</span> Правильное разделение</div>
 								<a href="#" class="item-benefits__image">
-									<picture><source srcset="img/benefits/03.webp"type="image/webp"><img src="img/benefits/03.jpg?_v=1643114911491" alt="Картинка"></picture>
+									<picture><source srcset="img/benefits/03.webp"type="image/webp"><img src="img/benefits/03.jpg?_v=1645545372530" alt="Картинка"></picture>
 								</a>
 							</div>
 						</div>
 					</section>
-					<section class="page__story story spacing">
+					<section id="about" class="page__story story spacing">
 						<div class="story__body">
 							<div class="story__images images-story">
 								<div class="images-story__items">
 									<div class="images-story__column">
-										<div class="images-story__item"><picture><source srcset="img/story/01.webp"type="image/webp"><img src="img/story/01.jpg?_v=1643114911491" alt="Фото кофе"></picture>
+										<div class="images-story__item"><picture><source srcset="img/story/01.webp"type="image/webp"><img src="img/story/01.jpg?_v=1645545372530" alt="Фото кофе"></picture>
 										</div>
-										<div class="images-story__item"><picture><source srcset="img/story/02.webp"type="image/webp"><img src="img/story/02.jpg?_v=1643114911491" alt="Фото кофе"></picture>
+										<div class="images-story__item"><picture><source srcset="img/story/02.webp"type="image/webp"><img src="img/story/02.jpg?_v=1645545372530" alt="Фото кофе"></picture>
 										</div>
 									</div>
-									<div class="images-story__item images-story__item_big"><picture><source srcset="img/story/03.webp"type="image/webp"><img src="img/story/03.jpg?_v=1643114911491" alt="Фото кофе"></picture>
+									<div class="images-story__item images-story__item_big"><picture><source srcset="img/story/03.webp"type="image/webp"><img src="img/story/03.jpg?_v=1645545372530" alt="Фото кофе"></picture>
 									</div>
-									<div class="images-story__item images-story__item_more"><picture><source srcset="img/story/04.webp"type="image/webp"><img src="img/story/04.jpg?_v=1643114911491" alt="Фото кофе"></picture>
+									<div class="images-story__item images-story__item_more"><picture><source srcset="img/story/04.webp"type="image/webp"><img src="img/story/04.jpg?_v=1645545372530" alt="Фото кофе"></picture>
 									</div>
 								</div>
 							</div>
@@ -140,7 +140,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="page__products products spacing">
+					<section id="products" class="page__products products spacing">
 						<div class="products__header">
 							<h3 class="products__subtitle subtitle">Популярные продукты</h3>
 							<div class="products__title title">Популярные кофейные продукты</div>
@@ -148,7 +148,7 @@
 						<div class="products__items">
 							<article data-pid="1" class="product-card">
 								<a href="#" class="product-card__image-ibg">
-									<picture><source srcset="img/products/01.webp"type="image/webp"><img src="img/products/01.jpg?_v=1643114911491" alt=""></picture>
+									<picture><source srcset="img/products/01.webp"type="image/webp"><img src="img/products/01.jpg?_v=1645545372530" alt=""></picture>
 								</a>
 								<div class="product-card__body">
 									<div class="product-card__rating">
@@ -185,7 +185,7 @@
 							</article>
 							<article data-pid="2" class="product-card">
 								<a href="#" class="product-card__image-ibg">
-									<picture><source srcset="img/products/02.webp"type="image/webp"><img src="img/products/02.jpg?_v=1643114911491" alt=""></picture>
+									<picture><source srcset="img/products/02.webp"type="image/webp"><img src="img/products/02.jpg?_v=1645545372530" alt=""></picture>
 								</a>
 								<div class="product-card__body">
 									<div class="product-card__rating">
@@ -222,7 +222,7 @@
 							</article>
 							<article data-pid="3" class="product-card">
 								<a href="#" class="product-card__image-ibg">
-									<picture><source srcset="img/products/03.webp"type="image/webp"><img src="img/products/03.jpg?_v=1643114911491" alt=""></picture>
+									<picture><source srcset="img/products/03.webp"type="image/webp"><img src="img/products/03.jpg?_v=1645545372530" alt=""></picture>
 								</a>
 								<div class="product-card__body">
 									<div class="product-card__rating">
@@ -265,7 +265,7 @@
 					<section class="page__buy buy spacing">
 						<div class="buy__body">
 							<div class="buy__image">
-								<picture><source srcset="img/machine.webp"type="image/webp"><img src="img/machine.png?_v=1643114911491" alt=""></picture>
+								<picture><source srcset="img/machine.webp"type="image/webp"><img src="img/machine.png?_v=1645545372530" alt=""></picture>
 							</div>
 							<div class="buy__content content-buy">
 								<h4 class="content-buy__title title">Кофе
@@ -277,7 +277,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="page__popular popular spacing">
+					<section id="menu" class="page__popular popular spacing">
 						<div class="popular__body">
 							<div class="popular__header">
 								<div class="popular__subtitle subtitle">Меню</div>
@@ -288,7 +288,7 @@
 									<div class="popular__item item-popular">
 										<div class="item-popular__content">
 											<div class="item-popular__image">
-												<picture><source srcset="img/popular/02.webp"type="image/webp"><img src="img/popular/02.jpg?_v=1643114911491" alt=""></picture>
+												<picture><source srcset="img/popular/02.webp"type="image/webp"><img src="img/popular/02.jpg?_v=1645545372530" alt=""></picture>
 											</div>
 											<div class="item-popular__name"> Обжаренный сорт американо</div>
 										</div>
@@ -297,7 +297,7 @@
 									<div class="popular__item item-popular">
 										<div class="item-popular__content">
 											<div class="item-popular__image">
-												<picture><source srcset="img/popular/01.webp"type="image/webp"><img src="img/popular/01.jpg?_v=1643114911491" alt=""></picture>
+												<picture><source srcset="img/popular/01.webp"type="image/webp"><img src="img/popular/01.jpg?_v=1645545372530" alt=""></picture>
 											</div>
 											<div class="item-popular__name">Классический эспрессо</div>
 										</div>
@@ -306,7 +306,7 @@
 									<div class="popular__item item-popular">
 										<div class="item-popular__content">
 											<div class="item-popular__image">
-												<picture><source srcset="img/popular/03.webp"type="image/webp"><img src="img/popular/03.jpg?_v=1643114911491" alt=""></picture>
+												<picture><source srcset="img/popular/03.webp"type="image/webp"><img src="img/popular/03.jpg?_v=1645545372530" alt=""></picture>
 											</div>
 											<div class="item-popular__name">Традиционный Австрийский</div>
 										</div>
@@ -315,7 +315,7 @@
 									<div class="popular__item item-popular">
 										<div class="item-popular__content">
 											<div class="item-popular__image">
-												<picture><source srcset="img/popular/04.webp"type="image/webp"><img src="img/popular/04.png?_v=1643114911491" alt=""></picture>
+												<picture><source srcset="img/popular/04.webp"type="image/webp"><img src="img/popular/04.png?_v=1645545372530" alt=""></picture>
 											</div>
 											<div class="item-popular__name">Какао с маршмеллоу</div>
 										</div>
@@ -326,7 +326,7 @@
 									<div class="popular__item item-popular">
 										<div class="item-popular__content">
 											<div class="item-popular__image">
-												<picture><source srcset="img/popular/05.webp"type="image/webp"><img src="img/popular/05.png?_v=1643114911491" alt=""></picture>
+												<picture><source srcset="img/popular/05.webp"type="image/webp"><img src="img/popular/05.png?_v=1645545372530" alt=""></picture>
 											</div>
 											<div class="item-popular__name">Шоколадный Мокко</div>
 										</div>
@@ -335,7 +335,7 @@
 									<div class="popular__item item-popular">
 										<div class="item-popular__content">
 											<div class="item-popular__image">
-												<picture><source srcset="img/popular/06.webp"type="image/webp"><img src="img/popular/06.png?_v=1643114911491" alt=""></picture>
+												<picture><source srcset="img/popular/06.webp"type="image/webp"><img src="img/popular/06.png?_v=1645545372530" alt=""></picture>
 											</div>
 											<div class="item-popular__name">Кофейно-молочный Торре</div>
 										</div>
@@ -344,7 +344,7 @@
 									<div class="popular__item item-popular">
 										<div class="item-popular__content">
 											<div class="item-popular__image">
-												<picture><source srcset="img/popular/07.webp"type="image/webp"><img src="img/popular/07.png?_v=1643114911491" alt=""></picture>
+												<picture><source srcset="img/popular/07.webp"type="image/webp"><img src="img/popular/07.png?_v=1645545372530" alt=""></picture>
 											</div>
 											<div class="item-popular__name">Латте-напиток из Италии</div>
 										</div>
@@ -353,7 +353,7 @@
 									<div class="popular__item item-popular">
 										<div class="item-popular__content">
 											<div class="item-popular__image">
-												<picture><source srcset="img/popular/08.webp"type="image/webp"><img src="img/popular/08.png?_v=1643114911491" alt=""></picture>
+												<picture><source srcset="img/popular/08.webp"type="image/webp"><img src="img/popular/08.png?_v=1645545372530" alt=""></picture>
 											</div>
 											<div class="item-popular__name">Нежный макиато</div>
 										</div>
@@ -363,7 +363,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="page__reviews reviews spacing">
+					<section id="reviews" class="page__reviews reviews spacing">
 						<div class="reviews__body">
 							<div class="reviews__header">
 								<div class="reviews__subtitle subtitle">Отзывы</div>
@@ -376,7 +376,7 @@
 											<div class="slide-reviews__item">
 												<div class="slide-reviews__content">
 													<div class="slide-reviews__image-ibg">
-														<picture><source srcset="img/reviews/05.webp"type="image/webp"><img src="img/reviews/05.jpg?_v=1643114911491" alt=""></picture>
+														<picture><source srcset="img/reviews/05.webp"type="image/webp"><img src="img/reviews/05.jpg?_v=1645545372530" alt=""></picture>
 													</div>
 													<div class="slide-reviews__text">Зашли сегодня в эту прекрасную кофейню😍Очень понравился интерьер, дерево в сочетании с чёрной мебелью очень круто! Приятная музыка. Не могу не отметить прекрасную посуду ну тут просто 100 из 10.</div>
 												</div>
@@ -406,7 +406,7 @@
 											<div class="slide-reviews__item">
 												<div class="slide-reviews__content">
 													<div class="slide-reviews__image-ibg">
-														<picture><source srcset="img/reviews/04.webp"type="image/webp"><img src="img/reviews/04.jpg?_v=1643114911491" alt=""></picture>
+														<picture><source srcset="img/reviews/04.webp"type="image/webp"><img src="img/reviews/04.jpg?_v=1645545372530" alt=""></picture>
 													</div>
 													<div class="slide-reviews__text">Превосходное обслуживание, отличная свежая продукция, и самая классная фишка кэшбэк, делаешь покупку и возвращаешь часть денег. Это реально круто.</div>
 												</div>
@@ -438,7 +438,7 @@
 											<div class="slide-reviews__item">
 												<div class="slide-reviews__content">
 													<div class="slide-reviews__image-ibg">
-														<picture><source srcset="img/reviews/03.webp"type="image/webp"><img src="img/reviews/03.jpg?_v=1643114911491" alt=""></picture>
+														<picture><source srcset="img/reviews/03.webp"type="image/webp"><img src="img/reviews/03.jpg?_v=1645545372530" alt=""></picture>
 													</div>
 													<div class="slide-reviews__text">Атмосферное и очень уютное местечко. Бариста вообще огонь! Вкусное кофе, можно сказать, что цена полностью соответствует вкусу. Ааа какао, попробуйте обязательно, как буд-то ты пьешь какао с шоколадки "милка" </div>
 												</div>
@@ -468,7 +468,7 @@
 											<div class="slide-reviews__item">
 												<div class="slide-reviews__content">
 													<div class="slide-reviews__image-ibg">
-														<picture><source srcset="img/reviews/02.webp"type="image/webp"><img src="img/reviews/02.jpg?_v=1643114911491" alt=""></picture>
+														<picture><source srcset="img/reviews/02.webp"type="image/webp"><img src="img/reviews/02.jpg?_v=1645545372530" alt=""></picture>
 													</div>
 													<div class="slide-reviews__text">Обилие авторских напитков и сиропы собственного производства вынуждают возвращаться вновь и вновь. Латте мохито (уже ушедший в историю) навсегда в моём сердечке. Есть розетки, которые выручили меня в день защиты диплома. Рекомендую! </div>
 												</div>
@@ -500,7 +500,7 @@
 											<div class="slide-reviews__item">
 												<div class="slide-reviews__content">
 													<div class="slide-reviews__image-ibg">
-														<picture><source srcset="img/reviews/01.webp"type="image/webp"><img src="img/reviews/01.jpg?_v=1643114911491" alt=""></picture>
+														<picture><source srcset="img/reviews/01.webp"type="image/webp"><img src="img/reviews/01.jpg?_v=1645545372530" alt=""></picture>
 													</div>
 													<div class="slide-reviews__text">Иногда бывает отвратительный кофе, иногда хороший.Смесь для дома всегда беру у них. Очень нравится</div>
 												</div>
@@ -530,7 +530,7 @@
 											<div class="slide-reviews__item">
 												<div class="slide-reviews__content">
 													<div class="slide-reviews__image-ibg">
-														<picture><source srcset="img/reviews/06.webp"type="image/webp"><img src="img/reviews/06.jpg?_v=1643114911491" alt=""></picture>
+														<picture><source srcset="img/reviews/06.webp"type="image/webp"><img src="img/reviews/06.jpg?_v=1645545372530" alt=""></picture>
 													</div>
 													<div class="slide-reviews__text">Если оценивать как место, где варят кофе - то с кофе здесь более чем всё в порядке - сам напиток нареканий не вызывает. Но мне бы хотелось, чтоб в кофейне была более камерная обстановка.
 													</div>
@@ -578,7 +578,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="page__news news spacing">
+					<section id="news" class="page__news news spacing">
 						<div class="news__body">
 							<div class="news__header">
 								<div class="news__subtitle subtitle">новости</div>
@@ -587,7 +587,7 @@
 							<div class="news__items">
 								<div class="news__item item-news">
 									<div class="item-news__image-ibg">
-										<picture><source srcset="img/news/01.webp"type="image/webp"><img src="img/news/01.jpg?_v=1643114911491" alt=""></picture>
+										<picture><source srcset="img/news/01.webp"type="image/webp"><img src="img/news/01.jpg?_v=1645545372530" alt=""></picture>
 									</div>
 									<div class="item-news__content content-news">
 										<div class="content-news__top">
@@ -604,7 +604,7 @@
 								</div>
 								<div class="news__item item-news">
 									<div class="item-news__image-ibg">
-										<picture><source srcset="img/news/03.webp"type="image/webp"><img src="img/news/03.jpg?_v=1643114911491" alt=""></picture>
+										<picture><source srcset="img/news/03.webp"type="image/webp"><img src="img/news/03.jpg?_v=1645545372530" alt=""></picture>
 									</div>
 									<div class="item-news__content content-news">
 										<div class="content-news__top">
@@ -619,7 +619,7 @@
 								</div>
 								<div class="news__item item-news">
 									<div class="item-news__image-ibg">
-										<picture><source srcset="img/news/02.webp"type="image/webp"><img src="img/news/02.jpg?_v=1643114911491" alt=""></picture>
+										<picture><source srcset="img/news/02.webp"type="image/webp"><img src="img/news/02.jpg?_v=1645545372530" alt=""></picture>
 									</div>
 									<div class="item-news__content content-news">
 										<div class="content-news__top">
@@ -635,7 +635,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="page__booking booking spacing">
+					<section id="booking" class="page__booking booking spacing">
 						<div class="booking__body">
 							<div class="booking__content content-booking">
 								<div class="content-booking__header">
@@ -664,7 +664,7 @@
 			<div class="footer__top top-footer">
 				<div class="top-footer__content">
 					<div class="top-footer__logo">
-						<img src="img/logo.svg?_v=1643114911491" alt="Лого">
+						<img src="img/logo.svg?_v=1645545372530" alt="Лого">
 					</div>
 					<nav class="top-footer__menu menu-footer">
 						<ul class="menu-footer__list">
@@ -703,7 +703,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220125194831"></script>
+	<script src="js/app.min.js?_v=20220222225612"></script>
 </body>
 
 </html>
