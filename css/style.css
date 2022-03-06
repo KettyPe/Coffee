@@ -153,6 +153,15 @@ body::-webkit-scrollbar-thumb {
   min-width: 0;
 }
 
+.main {
+  padding-top: 7.75rem;
+}
+@media (max-width: 992px) {
+  .main {
+    padding-top: 5.625rem;
+  }
+}
+
 /*
 (i) Стили будут применяться ко 
 всем классам содержащим *__container
@@ -264,12 +273,12 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 20em) and (max-width: 73.125em) {
   .title {
-    font-size: calc(2.1875rem + 0.8125 * (((100vw - 20rem)) / ((53.125))));
+    font-size: calc(1.875rem + 1.125 * (((100vw - 20rem)) / ((53.125))));
   }
 }
 @media (max-width: 20em) {
   .title {
-    font-size: 2.1875rem;
+    font-size: 1.875rem;
   }
 }
 
@@ -326,17 +335,31 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 20em) and (max-width: 120em) {
   .spacing {
-    padding-bottom: calc(2.5rem + 6.25 * (((100vw - 20rem)) / ((100))));
+    padding-bottom: calc(1.875rem + 6.875 * (((100vw - 20rem)) / ((100))));
   }
 }
 @media (max-width: 20em) {
   .spacing {
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.875rem;
   }
 }
 
 .header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.header._header-scroll .header__content {
+  padding: 0.9375em 0em;
+}
+.header__wrapper {
   background: #1c1814;
+  z-index: 8;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 .header__content-container {
   max-width: 83.125rem;
@@ -351,7 +374,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 61.99875em) {
   .header__content {
     justify-content: space-between;
-    padding: 0.9375em 0em;
+    padding: 0.625em 0em;
   }
 }
 @media (min-width: 61.99875em) {
@@ -591,14 +614,12 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .top-footer__send {
-  background: #1c1814;
-  border-radius: 36px;
-  height: 4.5rem;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .top-footer__input {
+  width: 100%;
   background: #1c1814;
   border-radius: 36px;
   height: 4.5rem;
@@ -610,6 +631,10 @@ body::-webkit-scrollbar-thumb {
   .top-footer__input {
     padding: 1.375rem;
   }
+}
+.top-footer__button {
+  position: absolute;
+  right: 0;
 }
 .top-footer__btn {
   cursor: pointer;
@@ -902,12 +927,11 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 75em) {
   .benefits__item {
     flex: 0 1 50%;
-    padding-right: 1.25em;
-    margin-bottom: 1.25em;
   }
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 770px) {
   .benefits__item {
+    margin-bottom: 1.25em;
     padding-right: 0;
   }
 }
@@ -1979,47 +2003,34 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.875rem;
   }
 }
-.reviews__swiper {
-  margin-bottom: 2.25em;
-}
-@media (min-width: 1070px) {
-  .slide-reviews {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@media (min-width: 992px) {
+  .reviews__swiper {
+    margin-bottom: 2.25em;
   }
 }
-.slide-reviews__item {
+.slide-reviews {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   background: #1c1814;
 }
-@media (min-width: 1070px) {
-  .slide-reviews__item {
-    max-width: 36.5625rem;
-  }
-  .slide-reviews__item:not(:last-child) {
-    margin-right: 2.5em;
-  }
-}
 @media (max-width: 1070px) {
-  .slide-reviews__item:not(:last-child) {
+  .slide-reviews:not(:last-child) {
     margin-bottom: 1.875em;
   }
 }
 @media (min-width: 30em) {
-  .slide-reviews__item {
+  .slide-reviews {
     padding: 2.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 30em) {
-  .slide-reviews__item {
+  .slide-reviews {
     padding: calc(0.9375rem + 1.5625 * (((100vw - 20rem)) / ((10))));
   }
 }
 @media (max-width: 20em) {
-  .slide-reviews__item {
+  .slide-reviews {
     padding: 0.9375rem;
   }
 }
